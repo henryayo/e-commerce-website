@@ -43,3 +43,5 @@ The NPM modules and dependencies I have in my system are:
  - connect-mongodb-session
  - multer
  - uuid
+
+To test it out, clone it and then install all dependencies using npm i or npm install, run npm start and run localhost:3000 or 127.0.0.1:3000 on your browser.
