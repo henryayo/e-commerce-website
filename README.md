@@ -8,6 +8,7 @@ Henry Johnson
 E-commerce Website 
 
 ---- DESCRIPTION ----
+
 This is a fully responsive FullStack E-commerce website built with NodeJS, Express and MongoDB with the implementation of the Stripe API for a checkout system. It has an authentication system, shop and allows order tracking. It also has special admin-only features like adding, managing or deleting the products and updating order status.
 
 ![Screenshot (19)](https://user-images.githubusercontent.com/40214178/159981755-ba1784bb-67cf-44fb-bf2b-160b21322aa6.png)
