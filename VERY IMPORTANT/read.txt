@@ -1,0 +1,1 @@
+Image upload is what's preventing the upload to Heroku. Change the directory from product-data to a cloud service.

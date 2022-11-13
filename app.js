@@ -56,6 +56,7 @@ app.use(errorHandlerMiddleware);
 db.connectToDatabase()
   .then(function () {
     app.listen(port);
+    console.log(`Connected to port ${port} at http://localhost:${port}`)
   })
   .catch(function (error) {
     console.log('Failed to connect to the database!');
