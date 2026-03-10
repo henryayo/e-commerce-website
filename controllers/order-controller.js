@@ -1,4 +1,4 @@
-const stripe = require("stripe")("sk_test_51KX6yOEs0kdobxe5pSGEZ1ItTT3jh4RaHynucO9jZpSof9W1bhuYnqixAnJKLE5dzAAQDBZf9tXYgDkiUXhnDaNA00ZHRB0FCB");
+const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
 
 const Order = require("../models/order-model");
 const User = require("../models/user-model");
@@ -50,8 +50,8 @@ async function addOrder(req, res, next) {
       }
     }),
     mode: 'payment',
-    success_url: `http://localhost:3000/orders/success`,
-    cancel_url: `http://localhost:3000/orders/failure`,
+    success_url: `${process.env.BASE_URL}/orders/success`,
+    cancel_url: `${process.env.BASE_URL}/orders/failure`,
   });
 
   res.redirect(303, session.url);
